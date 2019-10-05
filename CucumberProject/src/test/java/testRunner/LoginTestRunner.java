@@ -8,7 +8,8 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 			features = "features\\Login.feature",
-			glue = "stepDefinition"
+			glue = "stepDefinition",
+			plugin = "json:CucumberProject\\target\\report.json"
 		)
 
 public class LoginTestRunner {
